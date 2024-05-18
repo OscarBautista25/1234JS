@@ -19,3 +19,8 @@ CREATE TABLE IF NOT EXISTS login (
 
 -- Insertar un usuario inicial para pruebas
 INSERT INTO login (username, password) VALUES ('admin', 'admin123');
+
+npm install mysql 
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '1234';
+FLUSH PRIVILEGES;
+
